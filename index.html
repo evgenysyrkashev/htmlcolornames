@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>HtmlColorsNames</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin' rel='stylesheet' type='text/css'>
+  </head>
+  <!-- build:css css/style.min.css -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- endbuild -->
+  <body>
+    <!-- FACEBOOK -->
+    <div id="fb-root"></div>
+    <!-- END FACEBOOK -->
+    
+    <nav class="header">
+      <h1 class="logo"><a href="http://evgenysyrkashev.com/htmlcolornames">HtmlColorNames</a></h1>
+      <span class="nav-text-helper">sorted</span>
+      
+        <ul class="sort">
+          <li data-sort="random" class="active">randomly</li>
+          <li data-sort="name">alphabetically</li>
+          <li data-sort="brightness">by brightness</li>
+        </ul>
+        <span class="about">?about</span>
+
+    </nav>
+
+    <div class="modal">
+      <div class="modal-color">
+        <div class="modal-color-text">
+          <span class="close">×</span>
+          <p class="modal-color-name"></p>
+          <p class="modal-color-hex"></p>
+          <p class="modal-color-rgb"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Is there someone who can help me write a beautiful text in english? -->
+    <div class="modal-about">
+      <div class="modal-about-container">
+        <span class="close-about">×</span>
+        <h1>HTMLColorNames. Salmon, chocolate or maybe tomato?</h1>
+        <p>There are three common way to define a color in HTML: RGB, HEX and color name. Last one is most interesting. You can use a word to describe a color in HTML. Unfortunately you can't use whatever word you want. PuppyPaws doesn't work. But there is a list of allowed html color names and all of them you can find on HTMLColorNames.</p>
+        <p>Did you notice that <span class="color-sample Magenta"></span>Magenta and <span class="color-sample Fuchsia"></span>Fuchsia are absolutely the same as well as <span class="color-sample Aqua"></span>Aqua and <span class="color-sample Cyan"></span>Cyan?</p>
+        <p>American english or British english? There are no difference between <span class="color-sample Gray"></span>Gray and <span class="color-sample Grey"></span>Grey. Both of them give you the same color.</p>
+        <p>Explore more with HTMLColorNames!</p>
+        <p>HTMLColorNames was made by <a href="http://evgenysyrkashev.com">Evgeny Syrkashev</a> with help of vanila JavaScript, HTML5 and CSS3.</p>
+
+        <div class="share-buttons">
+
+          <!-- Facebook -->
+          <div class="fb-like" data-href="http://evgenysyrkashev.com" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+
+          <!-- Twitter -->
+          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="container"></div>
+    </div>
+
+    <!-- build:js js/main.min.js -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- Twitter script -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <!-- Facebook script -->
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>
