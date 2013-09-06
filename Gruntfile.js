@@ -8,7 +8,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-rev');
   grunt.loadNpmTasks('grunt-usemin');
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
   
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -40,18 +39,6 @@ module.exports = function(grunt) {
         dest: 'publish/js/main.js',
       },
     },
-    concat: {
-      js: {
-        options: {
-          // Replace all 'use strict' statements in the code with a single one at the top
-          //banner: "'use strict';\n",
-          process: function(src, filepath) {
-            return '// Source: ' + filepath + '\n' +
-                src.replace(/(^|\n)[ \t]*('use strict'|"use strict");?\s*/g, '$1');
-          },
-        },
-      },
-    },
     cssmin: {
       options: {
         report: 'gzip',
@@ -68,21 +55,9 @@ module.exports = function(grunt) {
     usemin: {
       html: ['publish/index.html'],
     },
-    htmlmin: {
-      dist: {
-        options: {
-          //removeComments: true,
-          //collapseWhitespace: true,
-          useShortDoctype: true,
-        },
-        files: {
-          'publish/index.html': 'publish/index.html',
-        },
-      },
-    },
   });
 
   grunt.registerTask('default', ['clean', 'copy', 'useminPrepare', 
-      'concat', 'uglify', 'cssmin', 'rev', 'usemin', 'htmlmin']);
+      'concat', 'uglify', 'cssmin', 'rev', 'usemin']);
 
 }
