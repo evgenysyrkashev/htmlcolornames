@@ -3,4 +3,4 @@ HTMLColorNames
 
 The list of color names that you can use in CSS and HTML.
 
-[Live demo](http://evgenysyrkashev.com/colornames)
+[Live demo](http://evgenysyrkashev.com/colors)
